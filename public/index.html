@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <meta name="description" content="رابط الإنضمام إلى المجموعة" />
+
+        <!-- Placeholder for Open Graph tags -->
+        <meta property="og:title" content="رابط الإنضمام إلى المجموعة" />
+        <meta property="og:description" content="انضم إلى مجموعتنا الآن!" />
+        <meta id="og-image" property="og:image" content="" />
+        <meta id="og-url" property="og:url" content="" />
+        <meta property="og:type" content="website" />
+
+        <link rel="apple-touch-icon" href="/priv.png" />
+        <link rel="manifest" href="/manifest.json" />
+
+        <title>رابط الإنضمام إلى المجموعة</title>
+
+        <script>
+            // JavaScript to dynamically set Open Graph URL and Image
+            const baseUrl = window.location.origin;
+            document
+                .getElementById("og-image")
+                .setAttribute("content", `${baseUrl}/priv.png`);
+            document.getElementById("og-url").setAttribute("content", baseUrl);
+        </script>
+    </head>
+    <body>
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <div id="root"></div>
+    </body>
+</html>

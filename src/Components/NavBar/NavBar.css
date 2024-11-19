@@ -1,0 +1,77 @@
+.NavbarItems {
+    background-color: white;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: relative; /* Keeps the navbar fixed at the top */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures navbar stays on top */
+    margin-bottom: 50px; /* Adjust space under the navbar */
+}
+
+.empty-menu {
+    width: 40px;
+    display: flex; /* Ensure it displays the hamburger menu */
+    justify-content: center; /* Center align the hamburger menu */
+    align-items: center; /* Center the hamburger menu vertically */
+}
+
+.hamburger-menu {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.line {
+    height: 2px;
+    width: 100%;
+    background-color: black; /* Line color */
+    margin: 3px 0; /* Space between lines */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.navbar-logo {
+    width: 140px;
+    margin-left: auto; /* Push logo to the right */
+}
+
+.download-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto; /* Pushes it to the right */
+    margin-right: 20px; /* Adds some space from the edge */
+}
+
+.circle {
+    width: 35px; /* Diameter of the circle */
+    height: 35px; /* Diameter of the circle */
+    border: 2px solid black; /* Border color */
+    border-radius: 50%; /* Makes it a circle */
+    background-color: #26d367; /* Background color of the circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.down-arrow {
+    color: black; /* Arrow color */
+    font-size: 20px; /* Size of the arrow */
+}
+
+.NavbarItems > * {
+    flex-shrink: 0; /* Prevent items from shrinking */
+}
+
+@media screen and (max-width: 960px) {
+    .NavbarItems {
+        padding: 0 10px;
+    }
+}
