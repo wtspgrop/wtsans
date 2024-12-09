@@ -1,5 +1,5 @@
 {
-  "name": "wtdr",
+  "name": "wtan",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -24,9 +24,9 @@
     "web-vitals": "^4.2.3"
   },
   "overrides": {
-      "nth-check": "^2.1.1",
-      "postcss":"^8.4.47"
-    },
+    "nth-check": "^2.1.1",
+    "postcss": "^8.4.47"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
